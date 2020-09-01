@@ -8,8 +8,17 @@ namespace exercicio3GFT
 {
     public class ContaPoupanca:Conta
     {
-        private double _valorPoupanca;
+        public ContaPoupanca() : base()
+        {
+            this.ValorPoupanca = 0;
+        }
 
+        public ContaPoupanca(int numero, String titular, double saldo, double valorPoupanca) : base(numero, titular, saldo)
+        {
+            this.ValorPoupanca = valorPoupanca;
+        }
+
+        private double _valorPoupanca;
         public double ValorPoupanca
         {
             get { return _valorPoupanca; }
@@ -17,11 +26,11 @@ namespace exercicio3GFT
         }
 
 
-        public void RendimentoPoupanca()
+        public void RendimentoPoupanca(Conta c)
         {
-            this.ValorPoupanca = (this.Saldo * 0.05);
+            this.ValorPoupanca = (c.Saldo * 0.05);
 
-            Console.WriteLine("Saldo conta poupança: " + this.ValorPoupanca);
+            Console.WriteLine("Rendimento conta poupança: " + this.ValorPoupanca);
         }
     }
 }

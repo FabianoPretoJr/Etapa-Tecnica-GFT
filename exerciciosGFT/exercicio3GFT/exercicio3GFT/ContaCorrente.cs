@@ -8,8 +8,17 @@ namespace exercicio3GFT
 {
     public class ContaCorrente:Conta
     {
-        private double _valorCorrente;
+        public ContaCorrente():base()
+        {
+            this.ValorCorrente = 0;
+        }
 
+        public ContaCorrente(int numero, String titular, double saldo, double valorCorrente):base(numero, titular, saldo)
+        {
+            this.ValorCorrente = valorCorrente;
+        }
+
+        private double _valorCorrente;
         public double ValorCorrente
         {
             get { return _valorCorrente; }
@@ -17,9 +26,9 @@ namespace exercicio3GFT
         }
 
 
-        public void RendimentoCorrente()
+        public void RendimentoCorrente(Conta c)
         {
-            this.ValorCorrente = (this.Saldo * 0.03);
+            this.ValorCorrente = (c.Saldo * 0.03);
 
             Console.WriteLine("Rendimento conta corrente: " + this.ValorCorrente);
         }

@@ -45,7 +45,7 @@ namespace exercicio3GFT
 
         public void Rendimento()
         {
-            Console.WriteLine("Rendimento: " + this.Saldo);
+            Console.WriteLine("\n\nRendimento: " + this.Saldo);
         }
     }
 }

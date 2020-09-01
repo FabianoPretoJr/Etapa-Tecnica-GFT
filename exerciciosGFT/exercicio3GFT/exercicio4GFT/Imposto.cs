@@ -9,9 +9,7 @@ namespace exercicio4GFT
 
     public class Imposto
     {
-
         private double _impostoCorrente;
-
         public double Impostocorrente
         {
             get { return _impostoCorrente; }

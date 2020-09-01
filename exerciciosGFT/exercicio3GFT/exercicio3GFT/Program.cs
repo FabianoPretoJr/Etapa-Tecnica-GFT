@@ -22,8 +22,8 @@ namespace exercicio3GFT
             c.Saldo = Convert.ToDouble(Console.ReadLine());
 
             c.Rendimento();
-            cc.RendimentoCorrente();
-            cp.RendimentoPoupanca();
+            cc.RendimentoCorrente(c);
+            cp.RendimentoPoupanca(c);
 
             Console.ReadKey();
         }

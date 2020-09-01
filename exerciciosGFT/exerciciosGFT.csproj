@@ -104,6 +104,7 @@
     <None Include="exercicio3GFT\exercicio4GFT\App.config" />
     <None Include="exercicio3GFT\exercicio4GFT\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
     <None Include="exercicio3GFT\exercicio4GFT\obj\Debug\exercicio4GFT.csproj.CoreCompileInputs.cache" />
+    <None Include="exercicio3GFT\exercicio4GFT\obj\Debug\exercicio4GFT.csprojAssemblyReference.cache" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="exercicio1GFT\exercicio1GFT.sln" />
